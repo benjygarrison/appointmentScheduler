@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="481.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.AddAppointmentsController">
+   <children>
+      <TableView fx:id="customerTableView" layoutX="47.0" layoutY="80.0" prefHeight="344.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="idColumn" minWidth="0.0" prefWidth="0.0" text="ID" />
+          <TableColumn fx:id="nameColumn" prefWidth="199.0" text="Customers" />
+        </columns>
+      </TableView>
+      <Button fx:id="returnButton" layoutX="516.0" layoutY="424.0" mnemonicParsing="false" onAction="#returnButtonClicked" text="Return" />
+      <Button fx:id="addButton" layoutX="349.0" layoutY="375.0" mnemonicParsing="false" onAction="#addAppoinments" text="Add" />
+      <TextField fx:id="typeText" layoutX="349.0" layoutY="148.0" onAction="#addAppoinments" promptText="type" />
+      <Label layoutX="275.0" layoutY="100.0" text="Location" />
+      <Label layoutX="274.0" layoutY="153.0" text="Type" />
+      <Label layoutX="274.0" layoutY="267.0" text="Start" />
+      <Label layoutX="277.0" layoutY="324.0" text="End" />
+      <ComboBox fx:id="comboBoxStartTime" layoutX="349.0" layoutY="262.0" prefHeight="27.0" prefWidth="116.0" />
+      <ComboBox fx:id="comboBoxEndTime" layoutX="349.0" layoutY="319.0" prefHeight="27.0" prefWidth="116.0" />
+      <DatePicker fx:id="datePicker" layoutX="349.0" layoutY="206.0" prefHeight="27.0" prefWidth="193.0" promptText="select a date" />
+      <Label layoutX="275.0" layoutY="211.0" text="Date" />
+      <ComboBox fx:id="comboBoxLocation" layoutX="349.0" layoutY="95.0" prefHeight="27.0" prefWidth="167.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="496.0" prefWidth="828.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.EditAppointmentsController">
+   <children>
+      <TableView fx:id="appointmentTableView" layoutX="17.0" layoutY="89.0" prefHeight="235.0" prefWidth="775.0">
+        <columns>
+            <TableColumn fx:id="customerColumn" prefWidth="138.66665649414062" text="Customer" />
+            <TableColumn fx:id="startColumn" prefWidth="148.66668701171875" text="Start" />
+            <TableColumn fx:id="endColumn" prefWidth="147.66665649414062" text="End" />
+            <TableColumn fx:id="typeColumn" prefWidth="155.33331298828125" text="Type" />
+            <TableColumn fx:id="locationColumn" prefWidth="179.0" text="Location" />
+            <TableColumn fx:id="appointmentIdColumn" minWidth="0.0" prefWidth="3.0" text="appointmentId" />
+        </columns>
+      </TableView>
+      <Button fx:id="returnButton" layoutX="744.0" layoutY="453.0" mnemonicParsing="false" onAction="#returnButtonClicked" prefHeight="27.0" prefWidth="64.0" text="Return" />
+      <Label layoutX="15.0" layoutY="43.0" prefHeight="32.0" prefWidth="183.0" text="Edit Appointments">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="datePicker" layoutX="189.0" layoutY="336.0" prefHeight="27.0" prefWidth="270.0" promptText="select date" />
+      <ComboBox fx:id="comboBoxStartTime" layoutX="190.0" layoutY="378.0" prefHeight="27.0" prefWidth="113.0" />
+      <ComboBox fx:id="comboBoxEndTime" layoutX="323.0" layoutY="378.0" prefHeight="27.0" prefWidth="109.0" />
+      <ComboBox fx:id="comboBoxLocation" layoutX="642.0" layoutY="336.0" prefWidth="150.0" />
+      <TextField fx:id="typeText" layoutX="475.0" layoutY="336.0" prefHeight="27.0" prefWidth="145.0" promptText="type" />
+      <Label layoutX="192.0" layoutY="459.0" prefHeight="17.0" prefWidth="331.0" text="*Note: start and end times will be updated together " />
+      <Label layoutX="219.0" layoutY="50.0" prefHeight="24.0" prefWidth="573.0" text="then enter the new value using the correct option below and click &quot;Edit Appointment&quot;" />
+      <Label layoutX="193.0" layoutY="474.0" prefHeight="17.0" prefWidth="315.0" text="(Select calender date, start and end times)" />
+      <Label layoutX="218.0" layoutY="35.0" prefHeight="17.0" prefWidth="573.0" text="To update a value, click on the cell you wish to update (start, type, etc.)," />
+      <Button fx:id="updateTimesButton" layoutX="262.0" layoutY="423.0" mnemonicParsing="false" onAction="#updateTimesButtonClicked" text="Update times" />
+      <Button fx:id="UpdateTypeButton" layoutX="499.0" layoutY="378.0" mnemonicParsing="false" onAction="#updateTypeButtonClicked" text="Update Type" />
+      <Button fx:id="upDateLocationButton" layoutX="659.0" layoutY="379.0" mnemonicParsing="false" onAction="#updateLocationButtonClicked" text="Update Location" />
+      <Label layoutX="23.0" layoutY="341.0" prefHeight="17.0" prefWidth="145.0" text="*Times in UTC" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="410.0" prefWidth="798.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.EditCustomersController">
+   <children>
+      <Button fx:id="editCustomers" layoutX="591.0" layoutY="371.0" mnemonicParsing="false" onAction="#editCustomersButtonClicked" prefHeight="27.0" prefWidth="111.0" text="Edit Customer" />
+      <Button fx:id="returnButton" layoutX="713.0" layoutY="370.0" mnemonicParsing="false" onAction="#returnButtonClicked" prefHeight="27.0" prefWidth="67.0" text="Return" />
+      <TableView fx:id="customerTableView" layoutX="11.0" layoutY="78.0" prefHeight="200.0" prefWidth="779.0">
+         <columns>
+            <TableColumn fx:id="nameColumn" prefWidth="127.0" text="Name" />
+            <TableColumn fx:id="addressColumn" prefWidth="113.0" text="Address" />
+            <TableColumn fx:id="address2Column" prefWidth="75.0" text="Address 2" />
+            <TableColumn fx:id="cityColumn" prefWidth="99.0" text="City" />
+            <TableColumn fx:id="postalCodeColumn" prefWidth="98.0" text="Postal Code" />
+            <TableColumn fx:id="countryColumn" prefWidth="128.33331298828125" text="Country" />
+            <TableColumn fx:id="phoneColumn" prefWidth="132.0" text="Phone" />
+            <TableColumn fx:id="idColumn" minWidth="0.0" prefWidth="0.0" text="id" />
+            <TableColumn fx:id="addressIdColumn" minWidth="1.0" prefWidth="5.0" text="addressId" />
+            <TableColumn fx:id="cityIdColumn" minWidth="0.0" prefWidth="2.0" text="cityId" />
+            <TableColumn fx:id="countryIdColumn" prefWidth="19.66668701171875" text="countryId" />
+         </columns>
+      </TableView>
+      <Label layoutX="26.0" layoutY="38.0" prefHeight="32.0" prefWidth="217.0" text="Edit Customers">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameText" layoutX="14.0" layoutY="281.0" prefHeight="27.0" prefWidth="106.0" promptText="name" />
+      <TextField fx:id="addressText" layoutX="127.0" layoutY="281.0" prefHeight="27.0" prefWidth="112.0" promptText="address" />
+      <TextField fx:id="address2Text" layoutX="244.0" layoutY="281.0" prefHeight="27.0" prefWidth="70.0" promptText="address, optional" />
+      <TextField fx:id="cityText" layoutX="318.0" layoutY="281.0" prefHeight="27.0" prefWidth="99.0" promptText="city" />
+      <TextField fx:id="postalCodeText" layoutX="422.0" layoutY="281.0" prefHeight="27.0" prefWidth="90.0" promptText="postal code" />
+      <TextField fx:id="countryText" layoutX="517.0" layoutY="281.0" prefHeight="27.0" prefWidth="118.0" promptText="country" />
+      <TextField fx:id="phoneText" layoutX="639.0" layoutY="281.0" prefHeight="27.0" prefWidth="148.0" promptText="phone" />
+      <Label layoutX="428.0" layoutY="318.0" prefHeight="17.0" prefWidth="89.0" text="Up to 10" />
+      <Label layoutX="430.0" layoutY="336.0" prefHeight="24.0" prefWidth="96.0" text="characters" />
+      <Label layoutX="631.0" layoutY="318.0" prefHeight="17.0" prefWidth="156.0" text="10 to 12 characters" />
+      <Label layoutX="189.0" layoutY="44.0" prefHeight="17.0" prefWidth="584.0" text="Click on the field you want to edit, enter the new value in the appropriate box below," />
+      <Label layoutX="188.0" layoutY="62.0" prefHeight="17.0" prefWidth="584.0" text="then click the &quot;Edit Customer&quot; button." />
+      <Label layoutX="101.0" layoutY="375.0" prefHeight="17.0" prefWidth="468.0" text="*Only the selected value will be updated when Edit Customer is clicked. --&gt;" />
+      <Label layoutX="103.0" layoutY="390.0" prefHeight="17.0" prefWidth="437.0" text="(Values in other fields will be ignored.)" />
+   </children>
+</AnchorPane>
