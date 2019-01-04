@@ -1,6 +1,6 @@
 This is a JavaFX/SQL program.
 
-This was a school project for a course that required an appointment scheduling application. 
+It was a school project for a course that required an appointment scheduling application. 
 
 It allows users to add, delete and edit appointment information. It has a function to translate the login screen into multiple languages depending on the region.
 
